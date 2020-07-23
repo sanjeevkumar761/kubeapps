@@ -493,7 +493,7 @@ dashboard:
   ## ref: https://hub.docker.com/r/bitnami/kubeapps-dashboard/tags/
   ##
   image:
-    registry: docker.io
+    registry:  souveniracr.azurecr.io
     repository: kubeapps/dashboard
     tag: latest
     ## Specify a imagePullPolicy
