@@ -38,16 +38,6 @@ const Footer: React.SFC<IFooterProps> = props => {
                 />
               </svg>
             </a>
-            <p className="type-small margin-small version-link">
-              <a
-                href={`https://github.com/kubeapps/kubeapps/releases/tag/${props.appVersion}`}
-                className="type-color-white"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {props.appVersion}
-              </a>
-            </p>
           </div>
         </div>
       </div>
