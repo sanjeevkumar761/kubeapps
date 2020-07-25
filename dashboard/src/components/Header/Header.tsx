@@ -3,7 +3,8 @@ import { LogOut, Settings } from "react-feather";
 import { NavLink } from "react-router-dom";
 import "react-select/dist/react-select.css";
 import { IFeatureFlags } from "shared/Config";
-import logo from "../../logo.svg";
+/*import logo from "../../logo.svg";*/
+import logo from "../../souvlogo.png";
 import { IClustersState } from "../../reducers/cluster";
 import { definedNamespaces } from "../../shared/Namespace";
 import { app } from "../../shared/url";
