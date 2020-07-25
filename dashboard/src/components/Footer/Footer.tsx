@@ -1,5 +1,6 @@
 import * as React from "react";
-import logo from "../../logo.svg";
+/*import logo from "../../logo.svg";*/
+import logo from "../../souvfooterlogo.png";
 
 // Icons
 import Heart from "../../icons/Heart";
@@ -12,10 +13,10 @@ const Footer: React.SFC<IFooterProps> = props => {
   return (
     <footer className="osFooter bg-dark type-color-reverse-anchor-reset">
       <div className="container padding-h-big padding-v-bigger">
-        <div className="row collapse-b-phone-land align-center">
+      <!--<div className="row collapse-b-phone-land align-center">
           <div className="col-6">
             <h4 className="inverse margin-reset">
-              <img src={logo} alt="Kubeapps logo" className="osFooter__logo" />
+              <img src={logo} alt="Souvapps logo" className="osFooter__logo" />
             </h4>
             <p className="type-small margin-reset">
               Made with <Heart className="icon icon-small" /> by Bitnami and{" "}
@@ -28,7 +29,7 @@ const Footer: React.SFC<IFooterProps> = props => {
                 contributors
               </a>
               .
-            </p>
+            </p> 
           </div>
           <div className="col-6 text-r">
             <a
@@ -75,7 +76,7 @@ const Footer: React.SFC<IFooterProps> = props => {
               </a>
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </footer>
   );
