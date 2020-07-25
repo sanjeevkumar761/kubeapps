@@ -18,16 +18,6 @@ const Footer: React.SFC<IFooterProps> = props => {
               <img src={logo} alt="Kubeapps logo" className="osFooter__logo" />
             </h4>
             <p className="type-small margin-reset">
-              Made with <Heart className="icon icon-small" /> by Bitnami and{" "}
-              <a
-                href="https://github.com/kubeapps/kubeapps/graphs/contributors"
-                className="type-color-white"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                contributors
-              </a>
-              .
             </p>
           </div>
           <div className="col-6 text-r">
