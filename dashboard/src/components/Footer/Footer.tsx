@@ -1,6 +1,5 @@
 import * as React from "react";
-/*import logo from "../../logo.svg";*/
-import logo from "../../souvlogo.png";
+import logo from "../../logo.svg";
 
 // Icons
 import Heart from "../../icons/Heart";
@@ -16,17 +15,44 @@ const Footer: React.SFC<IFooterProps> = props => {
         <div className="row collapse-b-phone-land align-center">
           <div className="col-6">
             <h4 className="inverse margin-reset">
-              <img src={logo} alt="Souvapps logo" className="osFooter__logo" />
+              <img src={logo} alt="Kubeapps logo" className="osFooter__logo" />
             </h4>
             <p className="type-small margin-reset">
-              SAP on Azure Apps
+              Made with <Heart className="icon icon-small" /> by Bitnami and{" "}
+              <a
+                href="https://github.com/kubeapps/kubeapps/graphs/contributors"
+                className="type-color-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                contributors
+              </a>
+              .
             </p>
           </div>
           <div className="col-6 text-r">
-            <a href="https://github.com/sanjeevkumar761/souvenir-sap-azure-apps" className="socialIcon margin-small">
+            <a
+              href="https://twitter.com/search?q=(kubeapps%20OR%20%23kubeapps)"
+              className="socialIcon margin-small"
+            >
               <svg
                 role="img"
-                aria-label="Souvenir on GitHub"
+                aria-label="Kubeapps on Twitter"
+                viewBox="0 0 54 54"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>twitter</title>
+                <circle fill="currentColor" cx="27" cy="27" r="27" />
+                <path
+                  d="M14 35.618A15.166 15.166 0 0 0 22.177 38c9.904 0 15.498-8.313 15.162-15.77A10.761 10.761 0 0 0 40 19.485c-.957.422-1.985.707-3.063.834a5.314 5.314 0 0 0 2.344-2.932 10.729 10.729 0 0 1-3.386 1.287A5.344 5.344 0 0 0 32 17c-3.442 0-5.973 3.193-5.195 6.51a15.17 15.17 0 0 1-10.994-5.54 5.288 5.288 0 0 0 1.65 7.078 5.33 5.33 0 0 1-2.417-.663c-.057 2.456 1.714 4.753 4.279 5.265-.751.204-1.573.25-2.408.09a5.33 5.33 0 0 0 4.982 3.683A10.767 10.767 0 0 1 14 35.618"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a href="https://github.com/kubeapps/kubeapps" className="socialIcon margin-small">
+              <svg
+                role="img"
+                aria-label="Kubeapps on GitHub"
                 viewBox="0 0 54 54"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -38,6 +64,16 @@ const Footer: React.SFC<IFooterProps> = props => {
                 />
               </svg>
             </a>
+            <p className="type-small margin-small version-link">
+              <a
+                href={`https://github.com/kubeapps/kubeapps/releases/tag/${props.appVersion}`}
+                className="type-color-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {props.appVersion}
+              </a>
+            </p>
           </div>
         </div>
       </div>
