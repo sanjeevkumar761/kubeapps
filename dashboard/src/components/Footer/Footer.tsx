@@ -1,5 +1,5 @@
 import * as React from "react";
-import logo from "../../logo.svg";
+import logo from "../../souvfooterlogo.png";
 
 // Icons
 import Heart from "../../icons/Heart";
