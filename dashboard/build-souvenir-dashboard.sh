@@ -1,6 +1,6 @@
 cd /home/juser/kubeapps/dashboard
 docker build -t kubeapps/dashboard .
-docker tag kubeapps/dashboard souveniracr.azurecr.io/kubeapps/
+docker tag kubeapps/dashboard souveniracr.azurecr.io/kubeapps/dashboard
 az acr login --name souveniracr --username $1 --password $2
 docker push souveniracr.azurecr.io/kubeapps/dashboard
 
