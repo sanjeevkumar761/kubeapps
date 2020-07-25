@@ -2,7 +2,7 @@ import * as React from "react";
 import logo from "../../souvfooterlogo.png";
 
 // Icons
-import Heart from "../../icons/Heart";
+// import Heart from "../../icons/Heart";
 
 interface IFooterProps {
   appVersion: string;
