@@ -79,7 +79,7 @@ const Footer: React.SFC<IFooterProps> = props => {
         </div> -->
       </div>
     </footer>
-  );
+  ); 
 };
 
 export default Footer;
