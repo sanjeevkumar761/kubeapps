@@ -18,5 +18,5 @@ sudo kubectl create namespace kubeapps
 cd /home/juser/kubeapps/chart/
 helm dependency update kubeapps
 helm install kubeapps --namespace kubeapps ./kubeapps --set useHelm3=true
-
+sleep 1m
 kubectl port-forward -n kubeapps svc/kubeapps 8080:80 --address 0.0.0.0
