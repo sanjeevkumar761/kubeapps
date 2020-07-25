@@ -18,6 +18,7 @@ const Footer: React.SFC<IFooterProps> = props => {
               <img src={logo} alt="Kubeapps logo" className="osFooter__logo" />
             </h4>
             <p className="type-small margin-reset">
+              Based on open source Kubeapps
             </p>
           </div>
           <div className="col-6 text-r">
