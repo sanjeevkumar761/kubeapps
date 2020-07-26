@@ -40,8 +40,7 @@ export function authenticate(
         dispatch(setSessionExpired(false));
       }
     } catch (e) {
-      //dispatch(authenticationError(e.toString()));
-      dispatch(setAuthenticated(true, oidc, Auth.defaultNamespaceFromToken("")));
+      dispatch(authenticationError(e.toString()));
     }
   };
 }
