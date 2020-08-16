@@ -133,7 +133,8 @@ export default function AccessURLTable({
     return null;
   }
 
-  let result = <p>The current application does not expose a public URL.</p>;
+  //let result = <p>The current application does not expose a public URL.</p>;
+  let result = <p>Look at the Notes section below for details.</p>;
   const publicServices = filterPublicServices(services);
   if (publicServices.length > 0 || ingresses.length > 0) {
     const columns = [

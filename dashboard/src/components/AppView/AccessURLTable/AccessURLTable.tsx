@@ -67,7 +67,8 @@ class AccessURLTable extends React.Component<IAccessURLTableProps> {
 
   private accessTableSection() {
     const { ingresses } = this.props;
-    let accessTableSection = <p>The current application does not expose a public URL.</p>;
+    //let accessTableSection = <p>The current application does not expose a public URL.</p>;
+    let accessTableSection = <p>Look at the Notes section below for details.</p>;
     const publicServices = this.publicServices();
     if (publicServices.length > 0 || ingresses.length > 0) {
       accessTableSection = (
